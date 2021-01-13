@@ -22,7 +22,7 @@ const rcon = new Rcon(config);
 setInterval(async () => {
   try {
     const info = JSON.parse(await rcon.sendCommand('serverinfo'));
-    const queuedAndJoining = (info.Queued > 0 || info.Joining > 0) ? `(${info.Joining + info.Queued})` : '';
+    const queuedAndJoining = (info.Queued > 0 || info.Joining > 0) ? `(+${info.Joining + info.Queued})` : '';
     discord.user.setActivity(`Players: ${info.Players}${queuedAndJoining}/${info.MaxPlayers}`);
   } catch (e) {
     e.preventDefault();
