@@ -1,0 +1,8 @@
+token: "bot token goes here"
+chatChannelId: "right click on text channel -> id goes here"
+commandChannelId: "right click on text channel -> id goes here"
+rconHost: "ip or domain"
+rconPort: "28016"
+rconPassword: "supersecretpassword"
+adminRole: "admin role id"
+modRole: "mod role id"

@@ -1,0 +1,43 @@
+{
+  "name": "discord-rust-rcon-bot",
+  "version": "1.0.0",
+  "description": "A Rust Bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm index.js",
+    "dev": "nodemon -r esm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koellemichael/discord-rust-rcon-bot.git"
+  },
+  "keywords": [
+    "Rust",
+    "RCON",
+    "WebRCON",
+    "Discord",
+    "Bot"
+  ],
+  "author": "Michael Kölle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koellemichael/discord-rust-rcon-bot/issues"
+  },
+  "homepage": "https://github.com/koellemichael/discord-rust-rcon-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "esm": "^3.2.25",
+    "js-yaml": "^4.0.0",
+    "ws": "^7.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
